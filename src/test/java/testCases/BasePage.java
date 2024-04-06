@@ -23,8 +23,8 @@ public class BasePage {
 		options.addArguments("--disable-dev-shm-using") ;
 		options.addArguments("--window-size=1920,1080");
 		options.addArguments("--headless") ;
-		driver = new ChromeDriver(options);
-		//driver = new RemoteWebDriver(new URL("http://54.167.125.14"),options);
+		//driver = new ChromeDriver(options);
+		driver = new RemoteWebDriver(new URL("http://54.163.63.255"),options);
 		driver.get("https://www.saucedemo.com/v1/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
